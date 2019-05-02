@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Retrive</title>
+    <script src="https://www.gstatic.com/firebasejs/3.5.2/firebase.js"></script>
+    <script src="insert.js"></script>
+</head>
+<body onload="disp()">
+    <div align="center">
+    <label>Brand Name</label>
+    <input type="text" id="bname"/><br><br>
+    <label>Name</label>
+    <input type="text" id="name"/><br><br>
+    <label>City</label>
+    <input type="text" id="city"/><br><br>
+    <label>State</label>
+    <input type="text" id="state"/><br><br>
+    <label>Country</label>
+    <input type="text" id="country"/><br><br>
+    <label>Designation</label>
+    <select id="des">
+        <option value="Doctor">Doctor</option>
+        <option value="Shop">Shop</option>
+        <option value="Student">Student</option>
+        <option value="Other">Other</option>
+    </select><br><br>
+    <button onclick="save()">Save</button><br><br><br><br><br><br>
+    <label id="disp"></label><br><br>
+    <!--<button onclick="disp()">Display</button>-->
+    <p id="disp"></p>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDVI0jrClutnh_GhgSPmjcSlfKhmXkguuY",
+    authDomain: "kyo-50794.firebaseapp.com",
+    databaseURL: "https://kyo-50794.firebaseio.com",
+    projectId: "kyo-50794",
+    storageBucket: "kyo-50794.appspot.com",
+    messagingSenderId: "1018209864365"
+  };
+  firebase.initializeApp(config);
+</script>
+</body>
+</html>
